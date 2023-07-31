@@ -2,7 +2,7 @@
  An Assignment featuring tasks for feature engineering, training and evaluating a classifier for suggestion detection. You will work with the data from SemEval-2019 Task 9 subtask A to classify whether a piece of text contains a suggestion or not. 
 
 Code Files: 
-1. 22222806_Rana,ipynb
+1. 22222806_Rana.ipynb
 
 # University of Galway
 ## Assignment 2 - CT5120
@@ -26,7 +26,7 @@ We will be using test_seen.csv for benchmarking our model, hence it has label. O
 
 * **Punctuation Removal:** Punctuation Removal is the process of removing punctuation marks (like "!",",","?"). The idea behind this is that we do not require punctuations to carry out some of the tasks in NLP, but it can be quite nice if you use them for Sentiment Analysis. In our case, suggestions wouldn't usually contain any punctuation and will have little impact if we remove them from the dataset. We use string.punctuation library which is inbuilt in Python to check for any type of punctuation marks and if we find it, we just discard it.
 
-* **Tokeniation:** Tokenization is the process of splitting either a query, paragraph or a document into smallest unit i.e., a word. For e.g., the sentence "I am a human" can be tokenized as "I", "am", "a", "human" and this is a good practice of NLP structures as discrete elements can be processed by the NLP model and token occurances can be used as vector representing the document. The NLTK.tokenize package has a 'word_tokenize' method which automatically converts your text into a list of tokens.
+* **Tokenisation:** Tokenization is the process of splitting either a query, paragraph, or document into the smallest unit i.e., a word. For e.g., the sentence "I am a human" can be tokenized as "I", "am", "a", "human" and this is a good practice of NLP structures as discrete elements can be processed by the NLP model and token occurances can be used as vector representing the document. The NLTK.tokenize package has a 'word_tokenize' method which automatically converts your text into a list of tokens.
 
 * **Stopword Removal:** Stopwords are the words which have the highest frequency in a document e.g., I, You, The, An, etc. So they provide almost no information or the meaning in any sentence. These sentences are better off removed from the sentence and hence this is called Stopword Removal. In NLTK library, we have stopwords function where there is a dictionary of stopwords defined, which we can use to filter out stopwords in a given document.
 
